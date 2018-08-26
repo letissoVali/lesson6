@@ -3,23 +3,24 @@ package ru.valiullin;
 import java.util.Arrays;
 
 public class books extends library {
-    private String[] books = new String[] {"book #1","book #2","book #3","book #4"};
-    String giveBook(int bookNum){ return this.books[bookNum]; }
+    private String[] booksArray = new String[] {"book #1","book #2","book #3","book #4"};
+    private String giveBook(int bookNum){ return this.booksArray[bookNum]; }
+    protected int bookOut;
 
     public void listOfBooks() {
         System.out.print("Ввыберите книгу из списка: ");
-        String list = Arrays.toString(books);
+        String list = Arrays.toString(booksArray);
         list = list.replaceAll("\\[","").replaceAll("\\]","");
         System.out.println(list);
     }
 
     public void giveABook(int bookNum) {
         //System.out.println(books.length);
-        if(bookNum >= this.books.length) {
+        if(bookNum >= this.booksArray.length) {
             System.out.println("Этой книги нет сейчас в библиотеке");
         } else {
-            String book = giveBook(bookNum);
-            System.out.println("Возьмите книгу " + book);
+            bookOut = Arrays.asList(booksArray).indexOf(bookNum);
+            System.out.println("Возьмите книгу: " + giveBook(bookNum));
         }
     }
 }

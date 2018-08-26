@@ -19,5 +19,6 @@ public class Main {
 
         books.listOfBooks();
         books.giveABook(3);
+        lib.readingArea();
     }
 }
