@@ -1,7 +1,7 @@
 package ru.valiullin;
 
 public class person extends library {
-    //books.books
+    //all_books.all_books
     private String fullname;
 
     public void addYourFullName(String fullName) {

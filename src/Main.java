@@ -12,13 +12,12 @@ public class Main {
 
     public static void main(String[] args) {
         library lib = new library();
-        books books = new books();
+        all_books all_books = new all_books();
         person pers = new person();
 
         pers.addYourFullName("valiullinII");
 
-        books.listOfBooks();
-        books.giveABook(3);
-        lib.readingArea();
+        all_books.listOfBooks();
+        all_books.giveABook(0);
     }
 }
