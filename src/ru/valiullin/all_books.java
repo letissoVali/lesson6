@@ -3,7 +3,7 @@ package ru.valiullin;
 import java.util.Arrays;
 
 public class all_books extends library{
-    private String[] booksArray;
+    private String[] booksArray = new String[] {"book#0","book #1","book #2","book #3"};
     protected String getNumABook(int bookNum){ return this.booksArray[bookNum]; }
 
     public void listOfBooks(String[] arrayOfBooks) {
