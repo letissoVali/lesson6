@@ -9,15 +9,15 @@ public class Main {
     //Использование модификаторов доступа
     //Использование принципов ООП
 
-
     public static void main(String[] args) {
         library lib = new library();
-        all_books all_books = new all_books();
-        person pers = new person();
+        artBooks artBooks = new artBooks();
+        scientificBook scf = new scientificBook();
 
-        pers.addYourFullName("valiullinII");
+        lib.addYourFullName("valiullinII");
 
-        all_books.listOfBooks();
-        all_books.giveABook(0);
+        artBooks.giveABook(3);
+        scf.giveABook(3);
+
     }
 }
