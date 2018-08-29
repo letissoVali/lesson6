@@ -14,7 +14,8 @@ public class Main {
         artBooks artBooks = new artBooks();
         scientificBook scf = new scientificBook();
 
-        lib.addYourFullName("valiullinII");
+        scf.addYourFullName("ValiullinII");
+        //artBooks.addYourFullName("");
 
         artBooks.giveABook(3);
         scf.giveABook(5);
