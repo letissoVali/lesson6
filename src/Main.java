@@ -17,7 +17,7 @@ public class Main {
         lib.addYourFullName("valiullinII");
 
         artBooks.giveABook(3);
-        scf.giveABook(3);
+        scf.giveABook(5);
 
     }
 }

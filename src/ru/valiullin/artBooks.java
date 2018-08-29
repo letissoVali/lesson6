@@ -14,4 +14,13 @@ public class artBooks extends all_books{
         all_books.listOfBooks(booksArray);
         return this.booksArray[bookNum];
     }
+    @Override
+    public void giveABook(int bookNum) {
+        if (bookNum >= this.booksArray.length) {
+            System.out.println("Этой книги нет сейчас в библиотеке");
+        } else {
+            String getABook = getNumABook(bookNum);
+            System.out.println("Возьмите книгу: " + getABook);
+        }
+    }
 }

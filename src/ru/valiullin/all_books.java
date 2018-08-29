@@ -15,7 +15,7 @@ public class all_books extends library{
 
     public void giveABook(int bookNum) {
         if(bookNum >= this.booksArray.length) {
-            System.out.println(this.booksArray.length);
+            //System.out.println(this.booksArray.length);
             System.out.println("Этой книги нет сейчас в библиотеке");
         } else {
             String getABook = getNumABook(bookNum);
